@@ -1,13 +1,10 @@
-window.TjConfig = {
 
-    //收集日志提交地址
-    logSubmitUrl: 'xxxx',
+module.exports = {
+   // 访问日志提交地址
+   LogSubmitUrl: '//tongji.domain.com/access/',
 
-    //热力图信息提交地址
-    hotMapSubmitUrl: 'xxxx',
-
-    //用户标识变量名
-    uidName: 'tj_uid',
+   // 热力图信息提交地址
+   HotmapSubmitUrl: '//tongji.domain.com/hotmap/',
 
     // 被统计网站的站点ID
     siteId: '',
@@ -15,19 +12,20 @@ window.TjConfig = {
     //搜索引擎配置
     searchEngines: {
         'www.baidu.com': {
-            'ainname': '百度',
-            'aindomain': 'baidu.com',
-            'ebname': '百度',
+        //    'mainname': '百度',
+        //    'maindomain': 'baidu.com',
+        //    'webname': '百度',
             'queryword': 'wd',
             'engine': 'baidu',
         },
         'news.baidu.com': {
-            'mainname': '百度',
-            'maindomain': 'baidu.com',
-            'webname': '百度新闻',
+        //    'mainname': '百度',
+        //    'maindomain': 'baidu.com',
+        //    'webname': '百度新闻',
             'queryword': 'wd',
             'engine': 'baidu',
         },
+        /*
         'image.baidu.com': {
             'mainname': '百度',
             'maindomain': 'baidu.com',
@@ -49,20 +47,22 @@ window.TjConfig = {
             'queryword': 'word',
             'engine': 'baidu',
         },
+        */
         'www.sogou.com': {
-            'mainname': '搜狗',
-            'maindomain': 'sogou.com',
-            'webname': '搜狗',
+        //   'mainname': '搜狗',
+        //   'maindomain': 'sogou.com',
+        //   'webname': '搜狗',
             'queryword': 'query',
             'engine': 'sogou',
         },
         'news.sogou.com': {
-            'mainname': '搜狗',
-            'maindomain': 'sogou.com',
-            'webname': '搜狗新闻',
+        //    'mainname': '搜狗',
+        //    'maindomain': 'sogou.com',
+        //    'webname': '搜狗新闻',
             'queryword': 'query',
             'engine': 'sogou',
         },
+        /*
         'pic.sogou.com': {
             'mainname': '搜狗',
             'maindomain': 'sogou.com',
@@ -84,20 +84,22 @@ window.TjConfig = {
             'queryword': 'query',
             'engine': 'sogou',
         },
+        */
         'www.so.com': {
-            'mainname': '360搜索',
-            'maindomain': 'so.com',
-            'webname': '360搜索',
+        //    'mainname': '360搜索',
+        //    'maindomain': 'so.com',
+        //    'webname': '360搜索',
             'queryword': 'q',
             'engine': '360',
         },
         'news.so.com': {
-            'mainname': '360搜索',
-            'maindomain': 'so.com',
-            'webname': ' 360搜索 新闻',
+        //    'mainname': '360搜索',
+        //    'maindomain': 'so.com',
+        //    'webname': ' 360搜索 新闻',
             'queryword': 'q',
             'engine': '360',
         },
+        /*
         'image.so.com': {
             'mainname': '360搜索',
             'maindomain': 'so.com',
@@ -133,21 +135,22 @@ window.TjConfig = {
             'queryword': 'p',
             'engine': 'yahoo',
         },
+        */
         'google.com.hk': {
-            'mainname': 'Google',
-            'maindomain': 'google.com.hk',
-            'webname': 'Google',
+        //    'mainname': 'Google',
+        //    'maindomain': 'google.com.hk',
+        //    'webname': 'Google',
             'queryword': 'q',
             'engine': 'google',
         },
         'www.google.com.hk': {
-            'mainname': 'Google',
-            'maindomain': 'www.google.com.hk',
-            'webname': 'Google',
+        //    'mainname': 'Google',
+        //    'maindomain': 'www.google.com.hk',
+        //    'webname': 'Google',
             'queryword': 'q',
             'engine': 'google',
         },
-
+        /*
         'search.114chn.com': {
             'mainname': '中国电信114',
             'maindomain': '114chn.com',
@@ -204,14 +207,16 @@ window.TjConfig = {
             'queryword': 'q',
             'engine': 'gougou',
         },
+        */
         'cn.bing.com': {
-            'mainname': '必应搜索',
-            'maindomain': 'bing.com',
-            'webname': '必应搜索',
+        //    'mainname': '必应搜索',
+        //    'maindomain': 'bing.com',
+        //    'webname': '必应搜索',
             'queryword': 'q',
             'engine': 'bing',
 
         },
+        /*
         'so.m.sm.cn': {
             'mainname': '神马搜索',
             'maindomain': 'm.sm.cn',
@@ -222,11 +227,12 @@ window.TjConfig = {
         },
         'm.sm.cn': {
             'mainname': '神马搜索',
-            'maindomain': 'm.sm.cn/',
+            'maindomain': 'm.sm.cn',
             'webname': '神马搜索',
             'queryword': 'q',
             'engine': 'sm',
 
         }
+        */
     }
 }
