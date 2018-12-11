@@ -85,23 +85,20 @@ module.exports = {
         return keywords;
     },
     /*
-    loadScript: function (url, cb) {
-        var el = document.createElement("script")
-        el.charset = "utf-8"
-
-        cb && (typeof cb === 'function') && (el.readyState ? el.onreadystatechange = function () {
-            if ("loaded" === el.readyState || "complete" === el.readyState) el.onreadystatechange = s,
-                cb()
-        } : el.onload = function () {
-            cb()
-        })
-
-        el.src = url
-
-        var fsel = document.getElementsByTagName("script")[0]
-        fsel.parentNode.insertBefore(el, fsel)
-    },
-    */
+     loadScript: function (url, cb) {
+     var el = document.createElement("script")
+     el.charset = "utf-8"
+     cb && (typeof cb === 'function') && (el.readyState ? el.onreadystatechange = function () {
+     if ("loaded" === el.readyState || "complete" === el.readyState) el.onreadystatechange = s,
+     cb()
+     } : el.onload = function () {
+     cb()
+     })
+     el.src = url
+     var fsel = document.getElementsByTagName("script")[0]
+     fsel.parentNode.insertBefore(el, fsel)
+     },
+     */
     // 汇报热力图等数据
     // data 字符串,需要“&”开头，如 &a=1&b=2
     heatmaplog: function (data, cb) {
@@ -113,7 +110,7 @@ module.exports = {
         }
         img.src = config.hotMapSubmitUrl + '?site=' + SiteId + '&click=1&data=' + encodeURIComponent(JSON.stringify(data))
     },
-    
+
     // Is the given value an array? Use ES5 Array.isArray if it's available.
     isArray: Array.isArray || function (value) {
         return Object.prototype.toString.call(value) === '[object Array]';
